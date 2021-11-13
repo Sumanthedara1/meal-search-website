@@ -1,0 +1,132 @@
+/* css of main search page */
+body{
+    background: linear-gradient(to top, rgb(15, 12, 41), rgb(48, 43, 99), rgb(36, 36, 62));
+}
+/* making background image opactity less making it dim */
+body::before {
+    content: "";
+    background-image: url("j8.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: .65;
+}
+main{
+    margin: 200px auto;
+    position: relative;
+}
+h3{
+    color: white;
+    margin: 20px;
+}
+/* search heading is handeled here */
+#search_heading{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 5rem;
+}
+/* search box part of css */
+#search{
+    text-align: center;
+    position: relative;
+    top: 10%;
+    width: 50%;
+    margin:100px auto;
+}
+#h2{
+    text-align: center;
+    color: white;
+}
+/* dynamically added div results section design is here */
+#results{
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+    color:black;
+}
+/* handling favourite list of recipes */
+#favs{
+    background-color: white;
+    margin: 20px;
+    padding: 40px;
+    width: 70%;
+    margin: auto;
+    background: linear-gradient(to top, rgb(22, 34, 42), rgb(58, 96, 115));
+}
+a {
+    cursor: pointer;
+}
+/* favourite each section div */
+#favs div{
+    width: 80%;
+    margin: 20px auto;
+    position: relative;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
+    min-height: 90px;
+    height: auto;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+}
+/* remove button */
+#favs div button{
+    height: 50%;
+    top:15%;
+    position: relative;
+    margin: 10px;
+}
+/* heading styles handeled here */
+#favs h3{
+    position: relative;
+    top:30%;
+    left:5%;
+}
+#favs a{
+    color: white;
+    text-decoration: none;
+}
+/* inside the searchboxes */
+/* handling add to favourites css here */
+#fav{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: small;
+    font-weight: 700;
+    text-decoration: underline;
+}
+/* handling search results css part */
+#results div a{
+    position: relative;
+    top:10%;
+    margin: 5px;
+    color: black;
+}
+#results div p{
+    position: relative;
+    top:10%;
+    margin: 5px;
+    color: black;
+}
+/* anchor inside parangraph tag */
+p a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+/* search results section */
+#results div{
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid grey;
+}
+a{
+    text-decoration: none;
+}

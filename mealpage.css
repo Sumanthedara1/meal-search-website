@@ -1,0 +1,76 @@
+/* css of meal page */
+body{
+    background: linear-gradient(to top, rgb(20, 30, 48), rgb(36, 59, 85));
+}
+/* meal page heading is style head */
+h1{
+    color: red;
+    text-align: center;
+    margin: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 100px;
+    width: 90%;
+}
+/* whole section of image and ingredients */
+#imgandingredients{
+    width: 80vw;
+    margin: auto;
+}
+/* h3 tags */
+h3{
+    font-weight: 300;
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100%;
+    padding-bottom: 5px;
+    text-decoration: underline;
+    font-weight: 800;
+    color: red;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* list items of ingredients getting styled */
+li{
+    color: white;
+    margin: 5px;
+    font-size:20px ;
+    padding: 5px;
+}
+/* styling image tag of indvidual recipe page */
+#img{
+    height: 350px;
+    width: 350px;
+    margin: 30px auto;
+}
+img{
+    width: 100%;
+    height:100%;
+}
+/* ingredients section css */
+#ingredients{
+    margin: auto;
+    width: 100%;
+    min-height: 300px;
+    height: auto;
+    background: linear-gradient(to top, rgb(55, 59, 68), rgb(66, 134, 244));
+}
+/* procedure section css */
+#procedure{
+    margin: 25px auto;
+    width: 82%;
+    min-height: 300px;
+    height: auto;
+    background: linear-gradient(to top, rgb(55, 59, 68), rgb(66, 134, 244));
+}
+/* handling css of instructions which is inside procedure*/
+#instructions{
+    margin: 25px;
+    color: white;
+    padding: 25px;
+    font-weight: 200;
+    font-size: 25px;
+    line-height: 150%;
+}
