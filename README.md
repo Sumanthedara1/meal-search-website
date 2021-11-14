@@ -7,9 +7,10 @@
 
 #### How it works?
 - Search the food you want 
-- select if it matches any searches by clicking on search result below the search bar
+- select if it matches any searches by clicking on search result below the search bar it will open a new meal page which will have the recipe
 - add to favourites button of search box will add it to favourites list
-- remove button will remove it
+- remove button will remove it from favourites list
+- on refreshing it you can observe our favourite list is persistent
 
 
 #### APi used:-https://www.themealdb.com/api.php
