@@ -1,5 +1,5 @@
 # meal-search-website
-> ### Meal search app to add meals in favourites along with recipe detail page done with html css and javascript
+> ### Meal search app to add meals in favourites along with recipe detail page done with html css and javascript along with bootstrap5 frame work
 > ![Stopwatch GIF](https://github.com/Sumanthedara1/meal-search-website/blob/main/meal.gif)
 
 
