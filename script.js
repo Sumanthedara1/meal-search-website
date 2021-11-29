@@ -99,11 +99,12 @@ sbar.addEventListener("keydown", function(e) {
                     sec_res.appendChild(res_div);
 
 
+                    it++;
 
 
                 }
 
-                it++;
+//                 it++;
 
             }
         }
