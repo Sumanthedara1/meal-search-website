@@ -1,8 +1,11 @@
 var msg = null;
 let allinfo = null;
 // getting info we need from api through http reuest and parseing it so that we can use it
+
+function requ(char)
+{
 var xh = new XMLHttpRequest();
-xh.open("get", "https://www.themealdb.com/api/json/v1/1/search.php?f=a", true);
+xh.open("get", "https://www.themealdb.com/api/json/v1/1/search.php?f="+char, false);
 xh.onload = function() {
 
     msg = JSON.parse(xh.response);
@@ -12,7 +15,7 @@ xh.onload = function() {
 }
 
 xh.send();
-
+}
 let str = '';
 
 
@@ -30,9 +33,6 @@ sbar.addEventListener("keydown", function(e) {
         // counter to name divs and buttons to make them trackes later
         let ct = 0;
 
-        if (str.length == 0) {
-          allinfo = msg.meals;
-        }
       
         while (ct < list.length) {
             // after every keyaction removing all the divs of search results using list array of div
@@ -49,6 +49,12 @@ sbar.addEventListener("keydown", function(e) {
             allinfo = msg.meals;
             str = str.substring(0, str.length - 1);
         }
+
+        if (str.length == 1) {
+            requ(str.charAt(0));
+          allinfo = msg.meals;
+        }
+      
         // to set ids of divs and elements in search box such that they can be tracked again easily
         let it = 0;
 
