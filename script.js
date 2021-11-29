@@ -38,29 +38,43 @@ sbar.addEventListener("keydown", function(e) {
             // after every keyaction removing all the divs of search results using list array of div
             var element = document.getElementById("d" + ct);
 
+            console.log(element);
+            console.log(ct);
+
             sec_res.removeChild(element);
             ct++;
 
         }
 
         if ((e.keyCode >= 65 && e.keyCode <= 90) || e.keyCode == 32) {
+
             str += String.fromCharCode(e.keyCode);
         } else {
             allinfo = msg.meals;
             str = str.substring(0, str.length - 1);
+            console.log(str);
         }
 
         if (str.length == 1) {
+            // 
             requ(str.charAt(0));
-          allinfo = msg.meals;
+        //  
+         allinfo = msg.meals;
         }
       
         // to set ids of divs and elements in search box such that they can be tracked again easily
         let it = 0;
 
       
+        let nt=0;
         list = [];
         if (str.length > 0) {
+
+            // if (str.length >= 1) {
+            //     requ(str.charAt(0));
+            //   allinfo = msg.meals;
+            // }
+          
             //  iterating and adding the matching strings into our search boxes along with favourite buttons
             while (it < allinfo.length) {
                 if (str.substring(0, str.length).toLowerCase() == allinfo[it].strMeal.substring(0, str.length).toLowerCase()) {
@@ -89,22 +103,23 @@ sbar.addEventListener("keydown", function(e) {
                     res_div.appendChild(sr_res);
                     res_div.appendChild(fav_b);
                     // finally appending to res div
-                    res_div.setAttribute("id", "d" + it);
+                    console.log(it);
+                    res_div.setAttribute("id", "d" + nt);
                     // creating this list of ids which we need to use remove and for updation of our search results div 
                     // each time we press the key front adding text or deleting
-                    list.push("d" + it);
+                    list.push("d" + nt);
 
-
+ 
+                    nt++;
                     // basically sr_res is the div of one search result being added to sec_res big div which is collection of all results 
                     sec_res.appendChild(res_div);
 
 
-                    it++;
 
 
                 }
 
-//                 it++;
+                it++;
 
             }
         }
