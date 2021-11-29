@@ -2,9 +2,10 @@
 var mesg=null;
 let te=null;
 var msg=null;
+let mealname=localStorage.getItem("recipe");
 var xh = new XMLHttpRequest();
 // keeping async false making sure that enough data is loaded first to give to our dynamical immediate invoking fucntion
-xh.open("get","https://www.themealdb.com/api/json/v1/1/search.php?f=a",false);
+xh.open("get","https://www.themealdb.com/api/json/v1/1/search.php?f="+mealname.charAt(0),false);
 xh.onload=function()
 {
 
