@@ -53,6 +53,7 @@ h3{
     background-color: white;
     margin: 20px;
     padding: 40px;
+    min-height:250px;
     width: 70%;
     margin: auto;
     background: linear-gradient(to top, rgb(22, 34, 42), rgb(58, 96, 115));
@@ -66,7 +67,7 @@ a {
     margin: 20px auto;
     position: relative;
     background: linear-gradient(to right, rgb(0, 0, 0), rgb(67, 67, 67));
-    min-height: 90px;
+    min-height: 100px;
     height: auto;
     color:white;
     display: flex;
@@ -97,6 +98,7 @@ a {
     font-style: italic;
     font-size: small;
     font-weight: 700;
+    
     text-decoration: underline;
 }
 /* handling search results css part */
